@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pimg4">
+
+    <LinearLayout
+        android:id="@+id/pic_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="唇诊系统"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/ll_chick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView android:id="@+id/tv_chick"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/Chick"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@null"
+            android:text="检测" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/ll_choose"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/ll_chick"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/tv_choose"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/choose_from_albm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@null"
+            android:text="读取照片" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/ll_take"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/ll_choose">
+
+        <TextView android:id="@+id/tv_take"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/take_photo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@null"
+            android:text="拍照" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/pic_title"
+        android:layout_above="@+id/ll_take">
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</RelativeLayout>

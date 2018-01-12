@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pimg7">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/lip_result"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:textSize="30sp" />
+
+
+    <EditText android:id="@+id/et_out"
+        android:layout_below="@id/text"
+        android:maxLength="95"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="备注信息！不超过95个字符长度" />
+    <Button
+        android:id="@+id/bt_out"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_below="@id/et_out"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#4cc05f"
+        android:drawablePadding="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="15sp"
+        android:text="上传记录" />
+
+</RelativeLayout>
+
